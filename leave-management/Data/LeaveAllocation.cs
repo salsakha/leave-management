@@ -19,6 +19,11 @@ namespace leave_management.Data
         [ForeignKey("LeaveTypeId")]
         public LeaveTypes LeaveType { get; set; }
         public int LeaveTypeId { get; set; }
+        public int Period { get; set; }
 
+        internal object Include(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
